@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index", 
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0094FF",
+    "navigationBarTitleText": "Java彻底入门",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

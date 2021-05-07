@@ -1,0 +1,157 @@
+.main {
+  padding: 10rpx;
+  color: #666;
+}
+
+.video_detail {
+  margin-top: 10rpx;
+
+}
+
+.video_detail video {
+  width: 100%;
+}
+
+.video_detail .title {
+  /*display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;*/
+
+
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+}
+
+.video_detail .author_views_comments {
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.video_detail text {
+  margin-left: 15rpx;
+}
+
+.video_detail .author {
+  color: #000;
+}
+
+.recommended_videos {
+  margin: 10rpx;
+}
+
+.recommended_video {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.recommended_video_img_wrap {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommended_video_img_wrap image {
+  width: 90%;
+  border-radius: 15rpx;
+}
+
+.recommended_video_detail {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.recommended_video_detail .title {
+  /*font-size: 30rpx;
+  color: #e06f93;*/
+
+  font-size: 30rpx;
+  color: #e06f93;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.video_views_comments {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.video_comments_wrap {
+  margin: 10rpx;
+}
+
+.title {
+  padding: 10rpx;
+  font-size: 28rpx;
+}
+
+.comments {}
+
+.comment {
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #666;
+}
+
+.comment_user {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment image {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.username_content_date_wrap {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.username_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.username_date .userName {
+  font-size: 28rpx;
+  color: #000;
+}
+
+.username_date .date {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #000;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

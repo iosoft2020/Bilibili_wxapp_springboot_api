@@ -1,0 +1,61 @@
+<view class="main">
+  <!-- 页面头-->
+  <MyTitle> </MyTitle>
+  <!-- 视频详情-->
+  <view class="video_detail">
+    <video src="{{videoDetails.videoSrc}}" controls></video>
+    <!-- 标题-->
+    <view class="title">{{videoDetails.title}}</view>
+    <view class="author_views_comments">
+      <!-- 作者-->
+      <text class="author">{{videoDetails.author}}</text>
+      <!-- 播放量-->
+      <text class="views">{{videoDetails.views}}万次观看</text>
+      <!-- 评论量-->
+      <text class="comments">{{videoDetails.comments}}弹幕</text>
+    </view>
+  </view>
+  <!-- 推荐视频-->
+  <view class="recommended_videos">
+    <navigator class="recommended_video" wx:for="{{recommendedVideos}}" wx:key="{{recommendedVideos}}">
+      <view class="recommended_video_img_wrap">
+        <image mode="widthFix" src="{{item.imgSrc}}">
+        </image>
+      </view>
+      <view class="recommended_video_detail">
+        <!-- 标题-->
+        <view class="title">{{item.title}}</view>
+        <!-- 播放量和评论量-->
+        <view class="video_views_comments">
+          <text class="views">{{item.views}}次观看</text>
+          <text class="comments">{{item.comments}}弹幕</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 视频评论列表-->
+  <view class="video_comments_wrap">
+    <view class="title">
+      评论({{videoCommentCount}})
+    </view>
+    <view class="comments">
+      <view class="comment" wx:for="{{videoComments}}" wx:key="{{videoComments}}">
+        <!-- 用户头像-->
+        <view class="comment_user">
+          <image mode="widthFix" src="{{item.userIcon}}">
+          </image>
+        </view>
+        <view class="username_content_date_wrap">
+          <view class="username_date">
+            <text class="userName">{{item.userName}}</text>
+            <text class="date">{{item.date}}</text>
+          </view>
+          <view class="content">
+            {{item.comment}}
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
