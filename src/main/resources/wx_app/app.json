@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/index/index", 
+    "pages/index/index",
     "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#0094FF",
-    "navigationBarTitleText": "Java彻底入门",
+    "navigationBarTitleText": "bilibili",
     "navigationBarTextStyle":"white"
   },
   "style": "v2",
